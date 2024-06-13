@@ -6,7 +6,10 @@
     "prettier"
   ],
   "parser": "@typescript-eslint/parser",
-  "parserOptions": { "project": true, "tsconfigRootDir": "./" },
+  "parserOptions": {
+    "project": "./tsconfig.eslint.json",
+    "tsconfigRootDir": "./"
+  },
   "plugins": ["@typescript-eslint"],
   "root": true,
   "ignorePatterns": ["dist"],
@@ -31,5 +34,6 @@
   "overrides": [
     { "files": ["*.{c,m,}{t,j}s", "*.{t,j}sx"] },
     { "files": ["*{test,spec}.{t,j}s?(x)"], "env": { "jest": true } }
-  ]
+  ],
+  "include": ["src", "vite.config.ts"]
 }
