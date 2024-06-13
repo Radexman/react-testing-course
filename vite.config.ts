@@ -13,5 +13,20 @@ export default defineConfig({
     setupFiles: "src/setupTests",
     mockReset: true,
     watch: true,
+    coverage: {
+      provider: "istanbul",
+      reportsDirectory: "./coverage",
+      reporter: ["text", "json", "html"],
+      include: ["src/components/**/*.{js,ts,jsx,tsx}"],
+      exclude: ["node_modules/", "**/*.d.ts"],
+      thresholds: {
+        global: {
+          statements: 90,
+          branches: 90,
+          functions: 90,
+          lines: 90,
+        },
+      },
+    },
   },
 });
