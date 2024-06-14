@@ -1,10 +1,10 @@
-import Greet from "./components/Greet/Greet";
+import Application from "./components/application/Application";
 
 const App = () => {
   return (
     <div className="App">
       <h1>React Testing</h1>
-      <Greet />
+      <Application />
     </div>
   );
 };

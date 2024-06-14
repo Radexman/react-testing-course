@@ -11,6 +11,6 @@ describe("Greet component should", () => {
   it("render default value is prop not passed", () => {
     render(<Greet />);
     const greetElement = screen.getByText(/hello user/i);
-    expect(greetElement).toBeInTheDocument();
+    expect(greetElement).toBeVisible();
   });
 });
