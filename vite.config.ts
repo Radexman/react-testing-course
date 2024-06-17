@@ -17,7 +17,9 @@ export default defineConfig({
       provider: "istanbul",
       reportsDirectory: "./coverage",
       reporter: ["text", "json", "html"],
-      include: ["src/components/**/*.{js,ts,jsx,tsx}"],
+      include: [
+        "src/components/**/*.{js,ts,jsx,tsx}, src/hooks/**/*.{js,ts,jsx,tsx}",
+      ],
       exclude: ["node_modules/", "**/*.d.ts"],
       thresholds: {
         global: {
