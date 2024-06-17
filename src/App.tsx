@@ -1,11 +1,14 @@
-import Counter from "./components/counter/Counter";
+import "./App.css";
+import { AppProviders } from "./providers/app-providers";
+import MuiMode from "./components/mui/mui-mode";
 
 const App = () => {
   return (
-    <div className="App">
-      <h1>React Testing</h1>
-      <Counter />
-    </div>
+    <AppProviders>
+      <div className="App">
+        <MuiMode />
+      </div>
+    </AppProviders>
   );
 };
 
