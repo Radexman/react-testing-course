@@ -12,6 +12,9 @@ export const handlers = [
       {
         name: "Clementine Bauch",
       },
+      {
+        name: "Harry Potter",
+      },
     ]);
   }),
 ];

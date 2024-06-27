@@ -1,4 +1,4 @@
-import { CounterTwoProps } from "./counterTwo.types";
+import type { CounterTwoProps } from "./CounterTwo.types";
 
 const CounterTwo = ({
   count,

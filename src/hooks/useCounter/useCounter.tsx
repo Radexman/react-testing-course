@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { UseCounterProps } from "./useCounter.types";
+import type { UseCounterProps } from "./useCounter.types";
 
 const useCounter = ({ initialCount = 0 }: UseCounterProps = {}) => {
   const [count, setCount] = useState(initialCount);

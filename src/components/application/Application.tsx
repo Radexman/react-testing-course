@@ -42,7 +42,9 @@ const Application = () => {
             <input type="checkbox" name="terms" id="terms" />
           </label>
         </div>
-        <button type="submit">Submit Application</button>
+        <button type="submit" disabled>
+          Submit Application
+        </button>
       </form>
     </>
   );

@@ -1,4 +1,4 @@
-import { GreetProps } from "./Greet.types";
+import type { GreetProps } from "./Greet.types";
 
 const Greet = ({ name = "User" }: GreetProps) => {
   return (

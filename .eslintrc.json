@@ -3,6 +3,7 @@
     "eslint:recommended",
     "react-app",
     "plugin:react/jsx-runtime",
+    "plugin:jest-dom/recommended",
     "prettier"
   ],
   "parser": "@typescript-eslint/parser",
@@ -34,6 +35,5 @@
   "overrides": [
     { "files": ["*.{c,m,}{t,j}s", "*.{t,j}sx"] },
     { "files": ["*{test,spec}.{t,j}s?(x)"], "env": { "jest": true } }
-  ],
-  "include": ["src", "vite.config.ts"]
+  ]
 }
